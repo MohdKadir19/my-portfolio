@@ -1,26 +1,79 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@plugin "tailwind-scrollbar";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme{
+
+  /* breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-md:768;
+  --breakpoint-lg:1024px;
+  --breakpoint-xl:1280px; 
+  /* --breakpoint-xl:1180px;  */
+  
+  --breakpoint-2xl:1536px;
+
+  /* colors */
+  --color-primary: #060a0f;
+  --color-secondary: #00B7AC;
+  --color-accent: #00B7AC;
+  --color-accent-hover: #E03A6D;
+  --color-teriary: #FF4F81;
+  --color-teriary-hover: #E03A6D;
+  --color-blue:#4e86cd;
+
+  /* fonts */
+  --font-inter: 'Inter', sans-serif;
+  --font-geist-mono: 'Geist Mono', monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+body{
+  @apply font-geist-mono text-white bg-primary leading-relaxed;
+}
+.h1{
+  @apply text-[28px] md:text-[36px] xl:text-[42px] leading-[1.15] tracking-tight font-bold;
+}
+.h2{
+  @apply text-[26px] md:text-[36px] xl:text-[38px] leading-[1.15] tracking-tight font-bold;
+}
+.h3{
+  @apply text-[24px] md:text-[28px] xl:text-[32px] leading-[1.2]  font-medium;
+}
+.h4{
+  @apply text-[22x] md:text-[26px] leading-snug  font-medium;
+}
+.conatainer{
+  @apply px-[15px]
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn{
+  @apply flex items-center justify-center rounded-full cursor-pointer transition-all font-medium h-[48px];
+}
+.btn-sm{
+  @apply min-w-[150px] px-5 text-[15px] font-semibold;
+}
+.btn-lg{
+  @apply min-w-[200px] px-6;
+}
+.btn-accent{
+  @apply bg-accent hover:bg-accent-hover;
+}
+.btn-teriary{
+  @apply bg-teriary hover:bg-teriary-hover;
+}
+.btn-white{
+  @apply text-white hover:text-white/90 text-primary;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.testimonials .swiper{
+  margin: 0 !important;
+}
+.md-flex-row{
+  flex-direction: row;
+}
+
+@media(max-width: 767xp){
+.md-flex-row{
+  flex-direction: column;
+}
 }
