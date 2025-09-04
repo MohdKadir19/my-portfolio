@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 export const metadata = {
-  title: "Abdul Kadir | Portfolio new one",
+  title: "Abdul Kadir | Portfolio",
   description:
     "Frontend Developer | UI Developer specializing in HTML, CSS, Bootstrap, Tailwind, JavaScript, React, Next.js, and modern UI.",
   // icons: {
