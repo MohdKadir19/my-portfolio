@@ -40,7 +40,7 @@ body{
   @apply text-[24px] md:text-[28px] xl:text-[32px] leading-[1.2]  font-medium;
 }
 .h4{
-  @apply text-[22x] md:text-[26px] leading-snug  font-medium;
+  @apply text-[22x] md:text-[20px] leading-snug  font-medium;
 }
 .conatainer{
   @apply px-[15px]

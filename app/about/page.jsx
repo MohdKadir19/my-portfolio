@@ -20,18 +20,18 @@ const About = () => {
   return (
     <PageWrapper>
       <div className="container mx-auto">
-        <div className="flex flex-col xl:flex-row items-center gap-24 w-full h-full xl:h-[620px] pt-20 lg:pt-20 xl:pt-0">
+        <div className="flex flex-col xl:flex-row items-center gap-8 md:gap-12 xl:gap-24 w-full h-full xl:h-[620px] pt-20 lg:pt-20 xl:pt-0">
           {/* img */}
-          <div className="hidden xl:flex w-full pt-14 m-w-[420px] relative">
+          <div className="flex w-full pt-0 md:pt-14 m-w-[420px] relative justify-center">
             <Image
-              className="relative z-20  rounded-full"
+              className="relative z-20 rounded-full border-3 border-dashed border-[#3B82F6] md:border-none"
               width={320}
               height={320}
               src={avtImg}
               alt="about"
             />
             <svg
-              className="absolute top-1/9 -left-[35px] w-full h-full"
+              className="absolute top-1/9 lg:left-[17px] md:left[10px] w-full h-full hidden md:flex"
               viewBox="0 0 320 320"
               fill="none"
             >
@@ -46,9 +46,9 @@ const About = () => {
               />
             </svg>
 
-            <div className="absolute bottom-1/15 left-[50px] z-40 ">
+            <div className="absolute bottom-1/15 md:left-[34%] lg:left-[22%] z-40 ">
               <Social
-                containerStyles="flex gap-4 w-max "
+                containerStyles="flex gap-4 w-max"
                 iconStyle={`${iconStyle} hover:scale-110`}
               />
             </div>

@@ -74,16 +74,17 @@ const Contact = () => {
     <PageWrapper>
       <div className="mx-auto w-full h-full flex flex-col items-center xl:justify-center xl:overflow-hidden !scrollbar !scrollbar-thumb-accent scrollbar-track-accent/5 overflow-y-scroll xl:overflow-y-visible py-20 xl:py-0">
         <div className="w-full">
-          <div className="flex flex-col xl:flex-row gap-6 items-center">
+          <div className="flex flex-col xl:flex-row gap-12 items-center">
             {/* text */}
-            <div className="flex-1 xl-w-[600px] flex flex-col gap-8">
+            <div className="flex-1 w-full xl:w-[600px] flex flex-col gap-8">
               <div>
                 <h2 className="h2 mb-4">
                   Get in <span className="text-accent">Touch</span>
                 </h2>
                 <p className="max-w-[450px]">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Aperiam, voluptas?
+                  Looking for a developer/designer to bring your ideas to life?
+                  Contact me to discuss your project, request a quote, or
+                  explore how we can work together.
                 </p>
               </div>
               <div>

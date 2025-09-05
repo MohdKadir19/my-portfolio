@@ -40,7 +40,7 @@ const Journey = () => {
         Education & <span className="text-accent">Experience</span>
       </h2>
       {experience.map((item) => (
-        <div key={item.id} className="flex items-start gap-12 w-full">
+        <div key={item.id} className="flex items-start gap-6 w-full">
           <div className="flex flex-col w-max justify-center items-center">
             <div className="w-3 h-3 bg-accent rounded-full"></div>
             <div className="w-[1px] h-[100px] xl:h-[180px] bg-white/10"></div>

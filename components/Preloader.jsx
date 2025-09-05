@@ -43,7 +43,7 @@ export default function NameLoader({ name = "Abdul Kadir", duration = 3 }) {
           exit="exit"
         >
           <motion.h1
-            className="text-5xl md:text-7xl font-extrabold tracking-wide flex gap-1"
+            className="text-4xl md:text-7xl font-extrabold tracking-wide flex gap-1"
             variants={container}
             initial="hidden"
             animate="visible"
