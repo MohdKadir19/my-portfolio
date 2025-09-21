@@ -18,7 +18,7 @@ const PageWrapper = ({ children }) => {
           ease: [0.25, 0.1, 0.25, 1], // cubic-bezier
         }}
         // className="min-h-screen w-screen fixed top-0 pointer-events-none"
-        className="relative h-auto h-screen flex items-center"
+        className="relative h-auto lg:h-screen flex items-center"
       >
         <motion.div
           initial={{ scaleX: 0 }}
