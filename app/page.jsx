@@ -52,7 +52,7 @@ const Home = () => {
             <Social containerStyles={containerStyles} iconStyle={iconStyle} />
           </div>
           {/* Right Part hidden xl:block */}
-          <div className="flex-1 relative z-10 mix-blend-multiply">
+          <div className="hidden xl:block flex-1 relative z-10 mix-blend-multiply">
             {/* Blob components */}
             <Blob containerStyle="w-[500px] h-[500px]" />
             {/* Gradient Overlay (z-10) */}
