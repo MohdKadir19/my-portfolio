@@ -23,7 +23,7 @@ const Home = () => {
         {/* <Pattern /> */}
         <div className="flex flex-col xl:flex-row items-center justify-center h-screen lg:justify-between w-full">
           {/* Left Part */}
-          <div className="w-full xl-w-[500px] flex flex-col items-center xl:items-start text-center xl:text-left pt-[30px] lg:p-0">
+          <div className="w-full xl-w-[500px] flex flex-col items-center xl:items-start text-center xl:text-left">
             <h1 className="h1 flex-1 mb-[20px]">
               Hi! I am Abdul Kadir
               <br />
