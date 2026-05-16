@@ -27,7 +27,7 @@ const experience = [
   },
   {
     id: 5,
-    year: "2017 - 2020",
+    year: "2018 - 2020",
     title: "Web Developer",
     company: "Creative Infozone",
   },
